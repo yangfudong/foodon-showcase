@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>forms</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Html4.0.1已有type，增改了几个属性</legend>
+        <div>
+            <label for="text1">
+                文本：<input type="text" id="text1" placeholder="随便输入" required readonly/>
+            </label>
+        </div>
+        <div>
+            <label for="password1">
+                密码：<input type="password" id="password1"/>
+            </label>
+        </div>
+        <div>
+            <label for="hidden1">
+                <input type="hidden" id="hidden1"/>
+            </label>
+        </div>
+        <div>
+            <label for="file1">
+                头像：<input type="file" id="file1"/>
+            </label>
+        </div>
+        <div>
+            <label for="radio1">性别：
+                <input type="radio" id="radio1" name="gender" value="male" checked/>男
+                <input type="radio" id="radio2" name="gender" value="female"/>女
+            </label>
+        </div>
+        <div>
+            <label>爱好：
+                <input type="checkbox" id="checkbox1" name="hobby" value="reading"/>读书
+                <input type="checkbox" id="checkbox2" name="hobby" value="sport"/>运动
+            </label>
+        </div>
+        <div>
+            <label for="select1">居住地：
+                <select id="select1">
+                    <optgroup label="北京市">
+                        <option value="11">海淀区</option>
+                        <option value="12">朝阳区</option>
+                    </optgroup>
+                    <optgroup label="上海市">
+                        <option value="21">浦东区</option>
+                        <option value="22">闸北区</option>
+                    </optgroup>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label>描述：
+                <textarea rows="3" cols="30"></textarea>
+            </label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Html5新增type</legend>
+        <div>
+            <label for="number1">
+                数字：<input type="number" id="number1" min="0" step="2" max="10000"/>
+            </label>
+        </div>
+        <div>
+            <label for="email1">
+                邮箱：<input type="email" id="email1"/>
+            </label>
+        </div>
+        <div>
+            <label for="url1">
+                链接：<input type="url" id="url1"/>
+            </label>
+        </div>
+        <div>
+            <label for="search1">
+                搜索：<input type="search" id="search1"/>
+            </label>
+        </div>
+        <div>
+            <label for="range1">
+                滑块：<input type="range" id="range1" min="1" step="1" max="10" value="5"/>
+            </label>
+        </div>
+        <div>
+            <label for="tel1">
+                电话：<input type="tel" id="tel1"/>
+            </label>
+            <span>这个主流浏览器都没支持</span>
+        </div>
+        <div>
+            <label for="date1">
+                日期：<input type="date" id="date1"/>
+            </label>
+        </div>
+        <div>
+            <label for="time1">
+                时间：<input type="time" id="time1"/>
+            </label>
+        </div>
+        <div>
+            <label for="datetime1">
+                日期时间：<input type="datetime-local" id="datetime1"/>
+            </label>
+        </div>
+        <div>
+            <label for="month1">
+                月份：<input type="month" id="month1"/>
+            </label>
+        </div>
+        <div>
+            <label for="week1">
+                星期：<input type="week" id="week1"/>
+            </label>
+        </div>
+        <div>
+            <label for="color1">
+                列表：<input type="number" list="url_list"/>
+            </label>
+        </div>
+        <div>
+            <label for="color1">
+                颜色：<input type="color" id="color1"/>
+            </label>
+        </div>
+    </fieldset>
+    <button type="reset">重置</button>
+    <button type="submit">提交</button>
+    <datalist id="url_list">
+        <option label="苹果" value="5"/>
+        <option label="谷歌" value="3"/>
+        <option label="惠普" value="1"/>
+    </datalist>
+</form>
+</body>
+</html>

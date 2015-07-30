@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="utf-8">
+    <title>ng-show and ng-hide directives</title>
+</head>
+<body>
+<div ng-controller="VisibleController">
+    <p ng-show="visible">字符串1</p>
+    <p ng-hide="visible">字符串2</p>
+    <button ng-click="toggle()">切换</button>
+</div>
+
+<script src="../lib/angular/1.2.26/angular.min.js"></script>
+<script>
+    function VisibleController($scope) {
+        $scope.visible = false;
+        $scope.toggle = function () {
+            $scope.visible = !$scope.visible;
+        }
+    }
+</script>
+</body>
+</html>
